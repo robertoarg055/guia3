@@ -32,7 +32,7 @@ export function useFetchMovies(query) {
             setError(null); // Reinicia errores previos
             // Petición a la API de OMDb con la clave de acceso y la consulta
             const response = await
-fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
+fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
             // Verifica si la respuesta HTTP es correcta
             if (!response.ok)
                 throw new Error("Error al cargar películas");
